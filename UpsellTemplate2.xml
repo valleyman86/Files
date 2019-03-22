@@ -1,0 +1,109 @@
+<UIView
+    width="100%"
+    height="100%"
+    backgroundColor="#fff">
+    
+    <UIImageView image="upsellbg"
+    contentMode="scaleAspectFill"
+    top="0" bottom="100%" left="30%"/>
+
+    <UIScrollView
+        contentInsetAdjustmentBehavior="never"
+        contentInset.bottom="parent.safeAreaInsets.bottom"
+        scrollIndicatorInsets.bottom="parent.safeAreaInsets.bottom"
+        top="parent.safeAreaInsets.top" left="0" right="100%" bottom="100%"
+        clipsToBounds="false">
+
+        <UIImageView image="HomeLogo"
+        top="0" center.x="50%"
+        tintColor="#fff"/>
+
+        <UIStackView
+            id="stackview"
+            alignment="center"
+            axis="vertical"
+            spacing="25"
+            width="100%"
+            center.x="50%"
+            bottom="100%">
+            <UILabel
+            width="100%"
+            textColor="#fff"
+            numberOfLines="0"
+            textAlignment="center"
+            lineBreakMode="byWordWrapping"
+            font="Helvetica Neue bold 42"
+            text="Start Your Free Trial!"
+            />
+            <UILabel
+            width="90%"
+            textColor="#fff"
+            numberOfLines="0"
+            textAlignment="center"
+            lineBreakMode="byWordWrapping"
+            font="Helvetica Neue bold 16"
+            text="Enjoy the best content TuneIn has to offer. Try Premium risk-free for 7 days then just $9.99/month.  Cancel anytime!"
+            />
+            <UIImageView image="premium_v1" width="75" height="18"/>
+            <UILabel
+            width="90%"
+            textColor="#fff"
+            textAlignment="center"
+            font="Helvetica Neue bold 16"
+            text="Live NFL, MLB, NBA and NHL"
+            />
+            <UIButton
+            title="PURCHASE ONE MONTH"
+            titleLabel.font="Helvetica Neue 15"
+            height="45"
+            left="15" right="100%"
+            backgroundColor="#d9962f"/>
+            <UIButton
+            title="PURCHASE ONE YEAR"
+            titleLabel.font="Helvetica Neue 15"
+            height="45"
+            left="15" right="100%"
+            backgroundColor="#d9962f"/>
+        </UIStackView>
+        <UILabel
+        width="90%"
+        center.x="50%"
+        top="#stackview.bottom + 10"
+        textColor="#fff"
+        numberOfLines="0"
+        textAlignment="center"
+        lineBreakMode="byWordWrapping"
+        font="Helvetica Neue 12"
+        text="TuneIn Premium is a recurring subscription.  You will automatically be billed the amount listed above through iTunes at the end of the free trial period which is 7 days. Your subscription will auto-renew unless you cancel or turn off auto-renew at least 24 hours before the end of the current period. You can manage your subscription in iTunes."
+        />
+        <UIButton
+        top="previous.bottom + 50"
+        right="next.left - 8"
+        titleLabel.textColor="#fff"
+        titleLabel.textAlignment="center"
+        titleLabel.font="Helvetica Neue bold 12"
+        touchUpInside="tosAction"
+        ><u>Terms of Service</u></UIButton>
+        <UILabel
+        center.x="50%"
+        center.y="previous.center.y"
+        textColor="#fff"
+        textAlignment="center"
+        font="Helvetica Neue 12"
+        text="and"
+        />
+        <UIButton
+        center.y="previous.center.y"
+        left="previous.right + 8"
+        titleLabel.textColor="#fff"
+        titleLabel.textAlignment="center"
+        titleLabel.font="Helvetica Neue bold 12"
+        touchUpInside="privacyPolicyAction"
+        ><u>Privacy Policy</u></UIButton>
+    </UIScrollView>
+
+    <UIButton image="nps_close_button"
+    top="parent.safeAreaInsets.top" right="parent.right - 15"
+    tintColor="#fff"
+    touchUpInside="dismiss"/>
+</UIView>
