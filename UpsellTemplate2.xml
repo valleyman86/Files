@@ -57,13 +57,13 @@
             titleLabel.font="Helvetica Neue 15"
             height="45"
             left="15" right="100%"
-            backgroundColor="#d9962f"/>
+            backgroundColor="red"/>
             <UIButton
             title="PURCHASE ONE YEAR"
             titleLabel.font="Helvetica Neue 15"
             height="45"
             left="15" right="100%"
-            backgroundColor="#d9962f"/>
+            backgroundColor="blue"/>
         </UIStackView>
         <UILabel
         width="90%"
